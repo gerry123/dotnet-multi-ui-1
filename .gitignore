@@ -1,0 +1,11 @@
+/.vs/
+/.local/
+/.nuget/
+/.dotnet/
+/bin
+/log
+*/bin
+**/obj
+*/Migrations
+data/m5.sqlite
+data/m5.sqlite-journal
