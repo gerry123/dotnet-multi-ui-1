@@ -12,5 +12,9 @@
   <ItemGroup>
     <PackageReference Include="Eto.Platform.Gtk" Version="2.8.0" />
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="xcopy $(SolutionDir)lib\win\*.dll $(OutDir) /Y" />
+  </Target>
 	
 </Project>
